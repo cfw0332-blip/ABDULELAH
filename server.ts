@@ -20,7 +20,7 @@ async function startServer() {
     pingTimeout: 60000,
   });
 
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   // Socket.io logic
   const rooms = new Map();
